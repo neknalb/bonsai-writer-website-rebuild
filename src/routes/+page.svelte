@@ -1,2 +1,1 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1 class="text-[60px]">Focus on writing and structuring.<br />Produce perfectly designed results.</h1>
