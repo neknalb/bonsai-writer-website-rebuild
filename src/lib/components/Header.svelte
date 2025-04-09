@@ -1,12 +1,15 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-    import logo from '$lib/images/logo.png'
+	import { page } from '$app/state'
+	import logo from '$lib/images/logo.png'
+	let route = $derived(page.route)
 </script>
 
-<header class="bg-white py-4 px-8 border-b-1 relative h-20">
-    <img src={logo} alt="Bonsai Writer logo" class="inline-block h-12 absolute left-8"/>
-    <div class="inline-block absolute right-8 top-7">
-        <a href="/">Home</a> | <a href="/whats-new">What's new?</a>
-    </div>
+<header class="relative h-20 border-b-1 bg-white px-8 py-4">
+	<img src={logo} alt="Bonsai Writer logo" class="absolute left-10 inline-block h-12" />
+	<div class="absolute top-7 right-10 flex space-x-4">
+		<a href="/" class={route.id === '/' ? 'text-primary-500' : 'text-gray-700'}>Home</a>
+		<a href="/whats-new" class={route.id === '/whats-new' ? 'text-primary-500' : 'text-gray-700'}>What's new</a>
+	</div>
 </header>
