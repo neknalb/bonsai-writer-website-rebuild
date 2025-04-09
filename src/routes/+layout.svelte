@@ -7,7 +7,7 @@
 </script>
 
 <Header />
-<main class="bg-surface-50 text-surface-950 space-y-4 p-4">
+<main>
 	{@render children()}
 </main>
 <Footer />
