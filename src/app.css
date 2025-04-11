@@ -10,13 +10,8 @@
 @import '@fontsource-variable/roboto-serif';
 
 [data-theme='wintry'] {
-	--heading-font-family: 'Roboto Serif', serif;
 	--base-font-family: 'Roboto', sans-serif;
-	--anchor-font-family: 'inherit';
-	--base-font-weight: 'lighter';
-}
-p {
-	font-weight: 100;
+	--base-font-weight: 200;
 }
 h2 {
 	font-family: 'Roboto Serif', serif;
