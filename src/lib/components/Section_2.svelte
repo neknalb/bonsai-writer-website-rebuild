@@ -1,10 +1,16 @@
 <script lang="ts">
 	import keyboardScribble from '$lib/images/Bonsai_Scr_Tastatur.jpg'
+	import keyboardScribbleDark from '$lib/images/Bonsai_Scr_Tastatur_DARK.jpg'
 	import screenshot from '$lib/images/Screenshot_Das_Jahr_2017.png'
 </script>
 
 <div class="flex flex-col items-center p-5 text-left">
-	<img src={keyboardScribble} alt="Scribble of the B key on a keyboard" class="mb-5 h-auto w-50" />
+	<picture class="mb-5 h-auto w-50">
+		<source srcset={keyboardScribble} media="(prefers-color-scheme: light)" />
+		<source srcset={keyboardScribbleDark} media="(prefers-color-scheme: dark)" />
+		<!-- User has no color preference: -->
+		<img src={keyboardScribble} alt="Scribbled B key on a keyboard" />
+	</picture>
 	<h1 class="mb-4 text-2xl font-bold">Text writing as it should be</h1>
 	<div class="mx-auto flex max-w-2xl flex-col px-4 md:flex-row">
 		<div class="mb-4 w-full md:mb-0 md:w-2/3">

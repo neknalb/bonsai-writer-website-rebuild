@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex h-100 w-full items-center justify-center bg-cover bg-center bg-no-repeat"
+	class="flex h-100 w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center"
 	style="background-image: url('{stageImage}')"
 >
 	<h1 class="text-[50px] text-white">
