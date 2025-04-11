@@ -6,11 +6,11 @@
 <div class="flex flex-col items-center p-5 text-left">
 	<img src={keyboardScribble} alt="Scribble of the B key on a keyboard" class="mb-5 h-auto w-50" />
 	<h1 class="mb-4 text-2xl font-bold">Text writing as it should be</h1>
-	<div class="mx-auto flex max-w-2xl px-4">
-		<div class="mr-4 w-2/3">
+	<div class="mx-auto flex max-w-2xl flex-col px-4 md:flex-row">
+		<div class="mb-4 w-full md:mb-0 md:w-2/3">
 			<img src={screenshot} alt="Christmas eve party 2017" class="h-auto w-full object-cover" />
 		</div>
-		<div class="w-1/3">
+		<div class="w-full md:w-1/3">
 			<p class="mb-4">
 				With the text writing application Bonsai Writer you can turn your thoughts into text
 				unhindered. You don't have to worry about formatting, you can enjoy perfectly designed
