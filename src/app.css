@@ -5,3 +5,20 @@
 @import '@skeletonlabs/skeleton/themes/wintry';
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+@import '@fontsource/roboto';
+@import '@fontsource-variable/roboto-serif';
+
+[data-theme='wintry'] {
+	--heading-font-family: 'Roboto Serif', serif;
+	--base-font-family: 'Roboto', sans-serif;
+	--anchor-font-family: 'inherit';
+	--base-font-weight: 'lighter';
+}
+p {
+	font-weight: 100;
+}
+h2 {
+	font-family: 'Roboto Serif', serif;
+	font-weight: 100;
+}

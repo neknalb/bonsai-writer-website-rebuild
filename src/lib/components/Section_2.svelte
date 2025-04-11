@@ -11,7 +11,7 @@
 		<!-- User has no color preference: -->
 		<img src={keyboardScribble} alt="Scribbled B key on a keyboard" />
 	</picture>
-	<h1 class="mb-4 text-2xl font-bold">Text writing as it should be</h1>
+	<h2 class="mb-4 text-2xl">Text writing as it should be</h2>
 	<div class="mx-auto flex max-w-2xl flex-col px-4 md:flex-row">
 		<div class="mb-4 w-full md:mb-0 md:w-2/3">
 			<img src={screenshot} alt="Christmas eve party 2017" class="h-auto w-full object-cover" />

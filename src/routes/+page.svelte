@@ -12,6 +12,6 @@
 </section>
 
 <section class="mb-12">
-	<h1>Plant your idea</h1>
+	<h2>Plant your idea</h2>
 	<p>Let your ideas become text. Without obstacles.</p>
 </section>
