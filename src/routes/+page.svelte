@@ -1,13 +1,9 @@
 <script lang="ts">
 	import Section_1 from '$lib/components/Section_1.svelte'
 	import Section_2 from '$lib/components/Section_2.svelte'
+	import Slide from '$lib/components/Slide.svelte'
+	import slide1BackgroundImage from '$lib/images/IMG_Idea.jpg?url'
 </script>
-
-<!--
-<h1>Eine Überschrift</h1>
-<p>Ein gewöhnlicher Absatz.</p>
-<p>Und noch ein gewöhnlicher Absatz.</p>
--->
 
 <section class="mb-12">
 	<Section_1 />
@@ -18,6 +14,9 @@
 </section>
 
 <section class="mb-12">
-	<h2 class="mb-4 text-2xl">Plant your idea</h2>
-	<p>Let your ideas become text. Without obstacles.</p>
+	<Slide
+		backgroundImage={slide1BackgroundImage}
+		claim="Plant your idea"
+		subline="Let your ideas become text. Without obstacles."
+	/>
 </section>
