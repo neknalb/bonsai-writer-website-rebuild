@@ -2,7 +2,7 @@
 	import Section_1 from '$lib/components/Section_1.svelte'
 	import Section_2 from '$lib/components/Section_2.svelte'
 	import Slide from '$lib/components/Slide.svelte'
-	import slide1BackgroundImage from '$lib/images/IMG_Idea.jpg?url'
+	import slide1BackgroundImage from '$lib/images/IMG_Idea.jpg'
 </script>
 
 <section class="mb-12">
