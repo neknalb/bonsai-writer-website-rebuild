@@ -5,15 +5,15 @@
 </script>
 
 <div class="flex flex-col items-center p-5 text-left">
-	<picture class="mb-5 h-auto w-50">
+	<picture class="mb-8 h-auto w-50">
 		<source srcset={keyboardScribble} media="(prefers-color-scheme: light)" />
 		<source srcset={keyboardScribbleDark} media="(prefers-color-scheme: dark)" />
 		<!-- User has no color preference: -->
 		<img src={keyboardScribble} alt="Scribbled B key on a keyboard" />
 	</picture>
-	<h2 class="mb-4 text-2xl">Text writing as it should be</h2>
+	<h2 class="mb-8 text-2xl">Text writing as it should be</h2>
 	<div class="mx-auto flex max-w-2xl flex-col px-4 md:flex-row">
-		<div class="mb-4 w-full md:mb-0 md:w-2/3">
+		<div class="w-full md:mb-0 md:w-2/3">
 			<img src={screenshot} alt="Christmas eve party 2017" class="h-auto w-full object-cover" />
 		</div>
 		<div class="w-full md:w-1/3">
