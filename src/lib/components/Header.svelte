@@ -4,7 +4,7 @@
 	import { goto } from '$app/navigation'
 	import { page } from '$app/state'
 	import logo from '$lib/images/logo.png'
-	let route = $derived(page.route)
+	const route = $derived(page.route)
 </script>
 
 <header class="flex h-20 items-center justify-between px-8 py-8">

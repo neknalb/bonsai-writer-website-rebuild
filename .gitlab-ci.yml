@@ -5,6 +5,7 @@ before_script:
 
 pages:
   script:
+    - npm run lint
     - npm run build
   artifacts:
     paths:

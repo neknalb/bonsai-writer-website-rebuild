@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { backgroundImage, claim, subline } = $props()
+	const { backgroundImage, claim, subline } = $props()
 </script>
 
 <div
