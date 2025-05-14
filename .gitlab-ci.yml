@@ -4,6 +4,7 @@ before_script:
   - npm ci
 
 pages:
+  environment: staging
   script:
     - npm run lint
     - npm run build
@@ -16,4 +17,4 @@ pages:
   only:
     # Trigger a new build and deploy only when there is a push to the
     # below branch(es)
-    - main
+    - staging
