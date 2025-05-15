@@ -3,10 +3,10 @@
 </script>
 
 <div
-	class="flex h-100 w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center"
+	class="flex h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center"
 	style="background-image: url('{stageImage}')"
 >
-	<h1 class="text-[50px] text-white">
+	<h1 class="px-6 text-[42px] text-white md:px-12 md:text-[60px]">
 		Focus on writing and structuring.<br />Produce perfectly designed results.
 	</h1>
 </div>

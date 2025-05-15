@@ -3,9 +3,9 @@
 </script>
 
 <div
-	class="flex h-100 w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-center"
+	class="flex h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-center"
 	style="background-image: url('{backgroundImage}')"
 >
-	<h1 class="text-2xl text-white">{claim}</h1>
-	<p class="text-m text-white">{subline}</p>
+	<h1 class="text-3xl text-white md:text-5xl">{claim}</h1>
+	<p class="text-lg text-white md:text-xl">{subline}</p>
 </div>
