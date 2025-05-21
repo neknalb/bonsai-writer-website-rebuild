@@ -11,9 +11,7 @@ build:
     - npm run build
   artifacts:
     paths:
-      # The folder that contains the built files to be published. This
-      # must be called "public".
-      - public
+      - build
 
 deploy:
   stage: deploy
@@ -22,5 +20,5 @@ deploy:
     - build
   script:
     - deno install -A jsr:@deno/deployctl --global
-    - cd public
+    - cd build
     - deployctl deploy --project=bw-product-website-rebuild jsr:@std/http/file-server

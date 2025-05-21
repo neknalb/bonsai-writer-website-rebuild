@@ -16,7 +16,7 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
-		"deno-deploy": "npm run build && cd public && deployctl deploy --project=bw-product-website-rebuild --entrypoint=jsr:@std/http/file-server"
+		"deno-deploy": "npm run build && cd build && deployctl deploy --project=bw-product-website-rebuild --entrypoint=jsr:@std/http/file-server"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
