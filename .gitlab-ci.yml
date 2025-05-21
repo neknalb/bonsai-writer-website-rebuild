@@ -1,11 +1,12 @@
-image: node:lts
+stages:
+  - build
+  - deploy
 
-before_script:
-  - npm ci
-
-pages:
-  environment: staging
+build:
+  stage: build
+  image: node:lts
   script:
+    - npm ci
     - npm run lint
     - npm run build
   artifacts:
@@ -14,7 +15,12 @@ pages:
       # must be called "public".
       - public
 
-  only:
-    # Trigger a new build and deploy only when there is a push to the
-    # below branch(es)
-    - staging
+deploy:
+  stage: deploy
+  image: denoland/deno:latest
+  dependencies:
+    - build
+  script:
+    - deno install -A jsr:@deno/deployctl --global
+    - cd public
+    - deployctl deploy --project=bw-product-website-rebuild jsr:@std/http/file-server
