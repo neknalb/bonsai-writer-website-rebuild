@@ -1,22 +1,31 @@
-# sv
+# Bonsai Writer Product Website Rebuild
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a (partial) rebuild of the original product website for Bonsai Writer.
 
-## Creating a project
+I developed it as an exercise for myself, as a kind of “coding kata”. I used:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Svelte 5 and SvelteKit](https://svelte.dev)
+- UI/Design: [Skeleton](https://www.skeleton.dev) and [Tailwind CSS](https://tailwindcss.com)
+- Linting: [ESLint](https://eslint.org)
+- Testing: [Vitest](https://vitest.dev) and [Playwrigth](https://playwright.dev)
+- CI/CD: [GitLab](https://gitlab.com)
+- Deployment/Hosting: [Deno Deploy](https://deno.com/deploy)
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Bonsai Writer?
 
-# create a new project in my-app
-npx sv create my-app
-```
+Bonsai Writer was an innovative text writing software for Linux, macOS, and Windows. It's special power was: Seperation of the strucured text from the design. This applies to the process of writing as well as to the data produced by Bonsai Writer. And in contrast to other approaches that does this, Bonsia Writer provides a rather familiar way of text writing and provides a beautiful, easy to use user interface.
+
+We started development of Bonsai Writer in 2017. In 2019, we had to stop further development.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start a development server:
 
 ```bash
 npm run dev
@@ -35,4 +44,10 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deploying
+
+For deploying to Deno Deploy you need to setup an account first.
+
+Deployment is usually done by pipeline the runs, when pushing new commits. See [.gitlab-ci-yml](./.gitlab-ci.yml). For authorization you need to create an access token that you provide in GitLab as environment variable `DENO_DEPLOY_TOKEN`.
+
+If you want to deploy from your local machine you can run `npm run deno-deploy`. This will open a website in your browser for authorization. To streamline deployment you can also set the required token as an environment variable on your machine.
