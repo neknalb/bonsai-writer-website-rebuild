@@ -15,7 +15,7 @@ I developed it as an exercise for myself, as a kind of “coding kata”. I used
 
 Bonsai Writer was an innovative text writing software for Linux, macOS, and Windows. It's special power was: Seperation of the strucured text from the design. This applies to the process of writing as well as to the data produced by Bonsai Writer. And in contrast to other approaches that does this, Bonsia Writer provides a rather familiar way of text writing and provides a beautiful, easy to use user interface.
 
-We started development of Bonsai Writer in 2017. In 2019, we had to stop further development.
+We started Bonsai Writer in 2017, inside the company [SALT AND PEPPER](https://salt-and-pepper.eu). In 2019, we had to stop further development.
 
 ## Developing
 
