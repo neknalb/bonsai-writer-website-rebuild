@@ -11,8 +11,8 @@
 	<!-- <div class="mx-auto flex max-w-2xl flex-col px-4 md:flex-row"> -->
 	<div class="max-w-xl columns-1 text-left">
 		<p class="mb-4">
-			You can try and get to know Bonsai Writer for free. Discover for yourself what makes writing
-			with Bonsai Writer such a great experience.
+			You can try and get to know Bonsai Writer for free on Linux, macOS, and Windows. Discover for
+			yourself what makes writing with Bonsai Writer such a great experience.
 		</p>
 	</div>
 	<picture class="h-auto max-w-xl">
