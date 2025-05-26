@@ -21,4 +21,10 @@ deploy:
   script:
     - deno install -A jsr:@deno/deployctl --global
     - cd build
-    - deployctl deploy --project=bw-product-website-rebuild jsr:@std/http/file-server
+    - deployctl deploy --project=bw-product-website-rebuild $PROD_FLAG jsr:@std/http/file-server
+  rules:
+    # Deploy to production system if we are on `main` branch
+    - if: $CI_COMMIT_REF_NAME == "main"
+      variables:
+        PROD_FLAG: '--prod'
+    - when: always
