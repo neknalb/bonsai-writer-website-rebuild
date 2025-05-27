@@ -70,14 +70,8 @@ For deploying to Deno Deploy you need to setup an account first.
 
 If you want to deploy from your local machine you can run `npm run deno-deploy`. This will open a website in your browser for authorization. To streamline deployment you can also set the required token as an environment variable on your machine.
 
-### GitHub Actions
+### GitHub Actions and GitLab CI/CD
 
-Ensure that you have the necessary permissions and configurations set up in GitHub. This includes providing the access token from Deno Deploy as a variable with key `DENO_DEPLOY_TOKEN`.
-
-Pushes to any branch trigger the pipeline to lint, test and deploy. Pushes to the the `main` branch are deployed to production.
-
-### GitLab CI/CD
-
-Ensure that you have the necessary permissions and configurations set up in GitLab. This includes providing the access token from Deno Deploy as a variable with key `DENO_DEPLOY_TOKEN`.
+Ensure that you have the necessary permissions and configurations set up in GitHub or GitLab. This includes providing the access token from Deno Deploy as a variable with key `DENO_DEPLOY_TOKEN`.
 
 Pushes to any branch trigger the pipeline to lint, test and deploy. Pushes to the the `main` branch are deployed to production.
