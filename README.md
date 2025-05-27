@@ -16,7 +16,7 @@ I developed it as an exercise for myself, as a kind of “coding kata”.
 - UI/Design: [Skeleton](https://www.skeleton.dev) and [Tailwind CSS](https://tailwindcss.com)
 - Linting: [ESLint](https://eslint.org)
 - Testing: [Vitest](https://vitest.dev) and [Playwrigth](https://playwright.dev)
-- CI/CD: [GitLab](https://gitlab.com)
+- CI/CD: [GitHub](https://github.com), [GitLab](https://gitlab.com)
 - Deployment/Hosting: [Deno Deploy](https://deno.com/deploy)
 
 ## Bonsai Writer
