@@ -1,4 +1,4 @@
-# Bonsai Writer Product Website Rebuild
+# Bonsai Writer Website Rebuild
 
 This is a (partial) rebuild of the original product website for Bonsai Writer.
 
