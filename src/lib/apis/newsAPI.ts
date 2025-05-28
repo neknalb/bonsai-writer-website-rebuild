@@ -12,7 +12,7 @@ export interface GetNewsResponse {
 }
 
 const getNews = async () => {
-	const response = await fetch(`${PUBLIC_NEWS_API_URL}`)
+	const response = await fetch(`${PUBLIC_NEWS_API_URL}/news`)
 	const data = (await response.json()) as GetNewsResponse
 
 	return data ?? null

@@ -48,6 +48,7 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/roboto-serif": "^5.2.5",
-		"@fontsource/roboto": "^5.2.5"
+		"@fontsource/roboto": "^5.2.5",
+		"@humanspeak/svelte-markdown": "^0.8.6"
 	}
 }
