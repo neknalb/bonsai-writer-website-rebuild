@@ -23,6 +23,8 @@ jobs:
         run: npm run lint
 
       - name: Build project
+        env:
+          PUBLIC_NEWS_API_URL: ${{ vars.PUBLIC_NEWS_API_URL }}
         run: npm run build
 
       - name: Setup Deno
