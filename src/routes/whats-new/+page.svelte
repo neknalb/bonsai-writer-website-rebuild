@@ -11,8 +11,12 @@
 	})
 </script>
 
-{#each news as aNews (aNews.date)}
-	<li>
-		<News date={aNews.date} title={aNews.title} content={aNews.content} />
-	</li>
-{/each}
+<div class="mx-auto w-full max-w-[800px] px-8">
+	<ul class="list-image-none">
+		{#each news as aNews (aNews.date)}
+			<li class="mb-16">
+				<News date={aNews.date} title={aNews.title} content={aNews.content} />
+			</li>
+		{/each}
+	</ul>
+</div>
