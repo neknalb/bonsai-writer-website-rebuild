@@ -1,8 +1,12 @@
 # Bonsai Writer Website Rebuild
 
+[![](https://img.shields.io/github/actions/workflow/status/neknalb/bonsai-writer-website-rebuild/build-deploy.yml?style=flat)](https://github.com/neknalb/bonsai-writer-website-rebuild/actions/workflows/build-deploy.yml)
+
 This is a (partial) rebuild of the original product website for Bonsai Writer.
 
 I developed it as an exercise for myself, as a kind of “coding kata”.
+
+The content for the "What's new" view is fetched from the [Bonsai Writer News Service](https://github.com/neknalb/bonsai-writer-news-service).
 
 ## Features
 
@@ -64,7 +68,7 @@ You can preview the production build with `npm run preview`.
 
 ## Deploying
 
-For deploying to Deno Deploy you need to setup an account first.
+For deploying to [Deno Deploy](https://deno.com/deploy) you need to setup an account first.
 
 ### From your local machine
 
