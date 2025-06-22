@@ -5,7 +5,7 @@
 </script>
 
 <div class="news my-4">
-	<h3>{title}</h3>
+	<h1>{title}</h1>
 	<small>{date}</small>
 	<div class="ml-8">
 		<SvelteMarkdown class="news" source={content} />
@@ -21,18 +21,18 @@
 		:global(small) {
 			font-weight: 100;
 		}
-		:global(h3) {
+		:global(h1) {
 			font-size: 34px;
 			font-weight: 900;
 			color: rgb(90, 90, 90);
 		}
-		:global(h4) {
+		:global(h2) {
 			font-size: 22px;
 			font-weight: 900;
 			margin-top: 24px;
 			margin-bottom: 8px;
 		}
-		:global(h5) {
+		:global(h3) {
 			font-size: 18px;
 			font-weight: 900;
 			margin-top: 4px;

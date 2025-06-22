@@ -9,9 +9,9 @@
 @import '@fontsource/roboto';
 @import '@fontsource-variable/roboto-serif';
 
-[data-theme='BonsaiWriter'] h2 {
+/* [data-theme='BonsaiWriter'] h2 {
 	font-family: 'Roboto Serif', serif;
 	font-weight: 100;
-}
+} */
 
 @custom-variant dark (&:where(.dark, .dark *));
